@@ -21,7 +21,7 @@ def split_data(X_train, X_val, y_train, y_val):
     pds = PredefinedSplit(test_fold=split_index)
     return X, y, pds
 
-FILE_READ_PATH = r'C:\\Monografia\\data\\Extracted_Feature_dataset\\Balanced_Features_Data.csv'
+FILE_READ_PATH = r'C:\\Monografia\\datasets\\extracted_feature_datasets\\Balanced_Features_Data.csv'
 RESULT_PATH =  r'C:\\Monografia\\results\\'
 if __name__ == '__main__':
     
