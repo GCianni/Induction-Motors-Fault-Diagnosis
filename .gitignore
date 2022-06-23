@@ -56,7 +56,7 @@ cover/
 *.pot
 
 # Django stuff:
-*.log
+#*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -167,6 +167,5 @@ cython_debug/
 
 # Monography Latex
 docs/latex/
-data/Extracted_Feature_dataset/
-data/saved_features_data/
+datasets/
 generated_models/
