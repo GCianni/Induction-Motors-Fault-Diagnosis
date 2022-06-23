@@ -167,8 +167,6 @@ cython_debug/
 
 # Monography Latex
 docs/latex/
-
-#data
-data/
-models/
-results/
+data/Extracted_Feature_dataset/
+data/saved_features_data/
+generated_models/
