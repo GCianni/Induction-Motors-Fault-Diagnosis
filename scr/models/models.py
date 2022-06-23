@@ -26,7 +26,7 @@ def get_clf(estimator):
 
     xgb_params = {
         'clf__max_depth': [2, 3, 4, 5, 6, 10],
-        'clf__learning_rate': [0.01, 0.05, 0.1, 0.2],
+        'clf__learning_rate':  [0.0001, 0.001, 0.01, 0.05, 0.1, 0.2, 0.5, 1],
         'clf__n_estimators': [8, 32, 64, 128, 256, 512, 1024],
         'clf__colsample_bytree': [0.1, 0.3, 0.7, 0.9, 1]
     }
@@ -41,7 +41,7 @@ def get_clf(estimator):
                                (256, 256), (256, 256, 256), (256, 256, 256, 256)],
         'clf__activation': ['identity', 'logistic', 'tanh', 'relu'],
         'clf__solver': ['sgd', 'adam'],
-        'clf__alpha': [0.0001, 0.001, 0.01, 0.05, 0.1, 0.5, 1],
+        'clf__alpha': [0.0001, 0.001, 0.01, 0.05, 0.1, 0.2, 0.5, 1],
         'clf__learning_rate': ['constant', 'adaptive']
     }
 
