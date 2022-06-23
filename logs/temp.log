@@ -1,2 +1,18 @@
-06/22/2022 09:42:56 PM: INFO: Log File is Created Successfully
-06/22/2022 09:43:00 PM: INFO: Feature Dataset Reading was Finished
+06/23/2022 06:36:32 PM: INFO: XGBoost_PCA_RandomSearch Training Time (sec)-: 2513.162757396698
+06/23/2022 06:36:32 PM: INFO: XGBoost_PCA_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction', PCA(n_components=0.99)),
+                ('clf',
+                 XGBClassifier(base_score=0.5, booster='gbtree', callbacks=None,
+                               colsample_bylevel=1, colsample_bynode=1,
+                               colsample_bytree=0.3, early_stopping_rounds=None,
+                               enable_categorical=False, eval_metric=None,
+                               gamma=0, gpu_id=-1, grow_policy='depthwise',
+                               importance_type=None, interaction_constraints='',
+                               learning_rate=0.05, max_bin=256,
+                               max_cat_to_onehot=4, max_delta_step=0,
+                               max_depth=5, max_leaves=0, min_child_weight=1,
+                               missing=nan, monotone_constraints='()',
+                               n_estimators=512, n_jobs=0, num_class=10,
+                               num_parallel_tree=1, objective='multi:softmax',
+                               predictor='auto', random_state=0, ...))])
+06/23/2022 06:36:33 PM: INFO: XGBoost_PCA_RandomSearch Test Acc-: 0.9396893681211241
