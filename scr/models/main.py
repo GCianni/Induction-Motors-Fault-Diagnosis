@@ -26,10 +26,8 @@ RESULT_PATH =  r'C:\\Monografia\\results\\'
 if __name__ == '__main__':
     
     dl = dummylog.DummyLog() 
-    dl.logger.info('Log File is Created Successfully')
 
     df = pd.read_csv(FILE_READ_PATH, index_col=0)
-    dl.logger.info('Feature Dataset Reading was Finished')
 
     X = df.iloc[: , :-1]
     y = df.iloc[: , -1]
@@ -40,7 +38,7 @@ if __name__ == '__main__':
     X_cv, y_cv, pds = split_data(X_train, X_val, y_train, y_val)
 
     for reduction_meth in ['PCA']:# ,'FeatureAgg'
-        for clf_meth in ['KNN', 'XGBoost']:#'RandomForest', 'NeuralNetwork', 'LogisticRegression', 
+        for clf_meth in ['KNN', 'XGBoost', 'RandomForest', 'NeuralNetwork', 'LogisticRegression']:#, 
             for metaheurisc_meth in ['RandomSearch', 'GeneticSearch']:
                 
                 str_inter_name = clf_meth+'_'+reduction_meth+'_'+metaheurisc_meth
@@ -60,16 +58,15 @@ if __name__ == '__main__':
                 search_method.fit(X=X_cv, y=y_cv)
                 dtime = time.time() - start
 
-                dl.logger.info(str_inter_name+' Training Time: '+str(dtime)+'sec')
+                dl.logger.info(str_inter_name+' Training Time (sec)-: '+str(dtime))
                 
                 best_model = search_method.best_estimator_
-                dl.logger.info(str_inter_name+' Best Model: '+str(best_model))
+                dl.logger.info(str_inter_name+' Best Model-: '+str(best_model))
                 
                 y_pred = best_model.predict(X_test)                
                 test_acc = accuracy_score(y_test, y_pred)
-                dl.logger.info(str_inter_name+' Test Acc: '+str(test_acc))
+                dl.logger.info(str_inter_name+' Test Acc-: '+str(test_acc))
 
-                print('Teste Score:', test_acc)
                 save_clf(best_model, str_inter_name)
 
                 history = pd.DataFrame(search_method.cv_results_).sort_values("mean_test_score", ascending=False).head()
