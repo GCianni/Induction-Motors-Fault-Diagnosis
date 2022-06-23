@@ -12,7 +12,6 @@ from sklearn.metrics import accuracy_score
 from metaheuristics import get_metaheuristic
 from models import get_clf, save_clf
 
-
 def split_data(X_train, X_val, y_train, y_val):
     # Split Data to Train and Validation
     split_index = [-1]*len(X_train) + [0]*len(X_val)
@@ -21,8 +20,8 @@ def split_data(X_train, X_val, y_train, y_val):
     pds = PredefinedSplit(test_fold=split_index)
     return X, y, pds
 
-FILE_READ_PATH = r'C:\\Monografia\\datasets\\extracted_feature_datasets\\Balanced_Features_Data.csv'
-RESULT_PATH =  r'C:\\Monografia\\results\\'
+FILE_READ_PATH = r'C:\\Induction Motor Fault Diagnosis\\datasets\\extracted_features_datasets\\Balanced_Features_Data.csv'
+RESULT_PATH =  r'C:\\Induction Motor Fault Diagnosis\\results\\'
 if __name__ == '__main__':
     
     dl = dummylog.DummyLog() 
@@ -38,7 +37,7 @@ if __name__ == '__main__':
     X_cv, y_cv, pds = split_data(X_train, X_val, y_train, y_val)
 
     for reduction_meth in ['PCA']:# ,'FeatureAgg'
-        for clf_meth in ['KNN', 'XGBoost', 'RandomForest', 'NeuralNetwork', 'LogisticRegression']:#, 
+        for clf_meth in ['XGBoost', 'RandomForest', 'NeuralNetwork', 'LogisticRegression']:#, 
             for metaheurisc_meth in ['RandomSearch', 'GeneticSearch']:
                 
                 str_inter_name = clf_meth+'_'+reduction_meth+'_'+metaheurisc_meth

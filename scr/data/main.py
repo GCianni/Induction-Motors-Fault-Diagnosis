@@ -5,10 +5,10 @@ from upsampling import upsampling_data
 
 # Get datafiles -> Filter each df -> Extract Feature & Index label for each df -> append dfs -> save dfs -> upsampling -> [normalized, model] -> 
 
-DATAFILE_PATH = r'C:\\Monografia\\datasets\\root_dataset'
-LABEL_PATH = r'C:\\Monografia\\datasets\\root_dataset\\Target.txt'
-SAVE_PATH = r'C:\\Monografia\\data\\extracted_feature_datasets\\'
-FILE_SAVE_PATH = r'C:\\Monografia\\data\\extracted_feature_datasets\\Balanced_Features_Data.csv'
+DATAFILE_PATH = r'C:\\Induction Motor Fault Diagnosis\\datasets\\root_dataset'
+LABEL_PATH = r'C:\\Induction Motor Fault Diagnosis\\datasets\\root_dataset\\Target.txt'
+SAVE_PATH = r'C:\\Induction Motor Fault Diagnosis\\datasets\\extracted_features_datasets\\'
+FILE_SAVE_PATH = r'C:\\Induction Motor Fault Diagnosis\\datasets\\extracted_features_datasets\\Balanced_Features_Data.csv'
 SAMPLE_FREQ = 50000
 
 if __name__ == '__main__':
