@@ -84,6 +84,6 @@ def get_clf(estimator):
     return clf, search_space
 
 def save_clf(clf, model_title):
-    MODEL_SAVE_PATH = r'C:\\Monografia\\models\\'
+    MODEL_SAVE_PATH = r'C:\\Induction Motor Fault Diagnosis\\generated_models\\'
     with open(MODEL_SAVE_PATH+model_title+'_model.pkl','wb') as f:
         pickle.dump(clf,f)
