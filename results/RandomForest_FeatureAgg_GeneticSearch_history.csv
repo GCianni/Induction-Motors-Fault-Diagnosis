@@ -1,6 +1,0 @@
-,param_index,index,params,mean_test_score,std_test_score,min_test_score,max_test_score,nan_test_score?
-126,0,154,"{'clf__n_estimators': 30, 'clf__max_depth': 30, 'clf__min_samples_leaf': 2, 'clf__bootstrap': True, 'clf__criterion': 'entropy'}",0.8987904014302874,0.0,0.8987904014302874,0.8987904014302874,False
-118,0,146,"{'clf__n_estimators': 30, 'clf__max_depth': 30, 'clf__min_samples_leaf': 2, 'clf__bootstrap': True, 'clf__criterion': 'entropy'}",0.8987904014302874,0.0,0.8987904014302874,0.8987904014302874,False
-102,0,129,"{'clf__n_estimators': 30, 'clf__max_depth': 30, 'clf__min_samples_leaf': 2, 'clf__bootstrap': True, 'clf__criterion': 'gini'}",0.8987904014302874,0.0,0.8987904014302874,0.8987904014302874,False
-109,0,136,"{'clf__n_estimators': 30, 'clf__max_depth': 30, 'clf__min_samples_leaf': 2, 'clf__bootstrap': True, 'clf__criterion': 'entropy'}",0.8987904014302874,0.0,0.8987904014302874,0.8987904014302874,False
-113,0,141,"{'clf__n_estimators': 30, 'clf__max_depth': 30, 'clf__min_samples_leaf': 2, 'clf__bootstrap': True, 'clf__criterion': 'entropy'}",0.8987904014302874,0.0,0.8987904014302874,0.8987904014302874,False

@@ -1,0 +1,6 @@
+,param_index,index,params,mean_test_score,std_test_score,min_test_score,max_test_score,nan_test_score?
+58,0,80,"{'clf__penalty': 'none', 'clf__solver': 'saga', 'clf__C': 0.05}",0.6066150794759337,0.0,0.6066150794759337,0.6066150794759337,False
+87,0,113,"{'clf__penalty': 'none', 'clf__solver': 'saga', 'clf__C': 0.1}",0.6066150794759337,0.0,0.6066150794759337,0.6066150794759337,False
+85,0,111,"{'clf__penalty': 'none', 'clf__solver': 'saga', 'clf__C': 0.1}",0.6066150794759337,0.0,0.6066150794759337,0.6066150794759337,False
+84,0,110,"{'clf__penalty': 'none', 'clf__solver': 'saga', 'clf__C': 0.05}",0.6066150794759337,0.0,0.6066150794759337,0.6066150794759337,False
+83,0,109,"{'clf__penalty': 'none', 'clf__solver': 'saga', 'clf__C': 0.1}",0.6066150794759337,0.0,0.6066150794759337,0.6066150794759337,False

@@ -1,0 +1,6 @@
+,param_index,index,params,mean_test_score,std_test_score,min_test_score,max_test_score,nan_test_score?
+123,0,152,"{'clf__max_depth': 6, 'clf__learning_rate': 0.5, 'clf__n_estimators': 256, 'clf__colsample_bytree': 0.7}",0.8612732910579098,0.0,0.8612732910579098,0.8612732910579098,False
+97,0,124,"{'clf__max_depth': 6, 'clf__learning_rate': 0.5, 'clf__n_estimators': 256, 'clf__colsample_bytree': 0.7}",0.8612732910579098,0.0,0.8612732910579098,0.8612732910579098,False
+95,0,122,"{'clf__max_depth': 6, 'clf__learning_rate': 0.5, 'clf__n_estimators': 256, 'clf__colsample_bytree': 0.7}",0.8612732910579098,0.0,0.8612732910579098,0.8612732910579098,False
+94,0,121,"{'clf__max_depth': 6, 'clf__learning_rate': 0.5, 'clf__n_estimators': 256, 'clf__colsample_bytree': 0.7}",0.8612732910579098,0.0,0.8612732910579098,0.8612732910579098,False
+93,0,120,"{'clf__max_depth': 6, 'clf__learning_rate': 0.5, 'clf__n_estimators': 256, 'clf__colsample_bytree': 0.7}",0.8612732910579098,0.0,0.8612732910579098,0.8612732910579098,False

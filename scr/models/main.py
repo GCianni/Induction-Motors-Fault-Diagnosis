@@ -36,9 +36,9 @@ if __name__ == '__main__':
     X_val, X_test, y_val, y_test = train_test_split(X_aux, y_aux, test_size=0.5, random_state=42, shuffle=True)
     X_cv, y_cv, pds = split_data(X_train, X_val, y_train, y_val)
 
-    for reduction_meth in ['PCA']:# ,'FeatureAgg'
+    for reduction_meth in ['PCA','FeatureAgg']:# 
         for clf_meth in ['XGBoost', 'RandomForest', 'NeuralNetwork', 'LogisticRegression']:#, 
-            for metaheurisc_meth in ['RandomSearch', 'GeneticSearch']:
+            for metaheurisc_meth in ['GeneticSearch', 'RandomSearch']:
                 
                 str_inter_name = clf_meth+'_'+reduction_meth+'_'+metaheurisc_meth
 
@@ -69,7 +69,7 @@ if __name__ == '__main__':
                 save_clf(best_model, str_inter_name)
 
                 history = pd.DataFrame(search_method.cv_results_).sort_values("mean_test_score", ascending=False).head()
-                history.to_csv(RESULT_PATH+str_inter_name+'_history.csv')
+                history.to_csv(RESULT_PATH+str_inter_name+'_searchlog.csv')
     
 
 # https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.GenericUnivariateSelect.html#sklearn.feature_selection.GenericUnivariateSelect

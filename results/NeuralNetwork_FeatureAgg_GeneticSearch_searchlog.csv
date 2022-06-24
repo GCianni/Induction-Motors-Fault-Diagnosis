@@ -1,0 +1,6 @@
+,param_index,index,params,mean_test_score,std_test_score,min_test_score,max_test_score,nan_test_score?
+112,0,144,"{'clf__hidden_layer_sizes': (64, 64, 64), 'clf__activation': 'tanh', 'clf__solver': 'adam', 'clf__alpha': 0.01, 'clf__learning_rate': 'adaptive'}",0.7462636533787748,0.0,0.7462636533787748,0.7462636533787748,False
+4,0,16,"{'clf__hidden_layer_sizes': (64, 64, 64), 'clf__activation': 'relu', 'clf__solver': 'adam', 'clf__alpha': 0.001, 'clf__learning_rate': 'constant'}",0.7458166885493198,0.0,0.7458166885493198,0.7458166885493198,False
+20,0,35,"{'clf__hidden_layer_sizes': (64, 64, 64), 'clf__activation': 'relu', 'clf__solver': 'adam', 'clf__alpha': 0.001, 'clf__learning_rate': 'constant'}",0.7458166885493198,0.0,0.7458166885493198,0.7458166885493198,False
+6,0,18,"{'clf__hidden_layer_sizes': (64, 64, 64), 'clf__activation': 'tanh', 'clf__solver': 'adam', 'clf__alpha': 0.01, 'clf__learning_rate': 'constant'}",0.7458166885493198,0.0,0.7458166885493198,0.7458166885493198,False
+57,0,77,"{'clf__hidden_layer_sizes': (64, 64, 64), 'clf__activation': 'tanh', 'clf__solver': 'adam', 'clf__alpha': 0.01, 'clf__learning_rate': 'constant'}",0.7372684861859933,0.0,0.7372684861859933,0.7372684861859933,False
