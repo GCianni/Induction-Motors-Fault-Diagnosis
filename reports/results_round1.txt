@@ -177,3 +177,41 @@
                  LogisticRegression(C=1, penalty='none', random_state=0,
                                     solver='saga'))])
 06/24/2022 12:46:26 PM: INFO: LogisticRegression_FeatureAgg_RandomSearch Test Acc-: 0.6098385384658361
+06/24/2022 08:23:47 PM: INFO: Adaboost_PCA_GeneticSearch Training Time (sec)-: 15267.870790958405
+06/24/2022 08:23:47 PM: INFO: Adaboost_PCA_GeneticSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction', PCA(n_components=0.99)),
+                ('clf',
+                 AdaBoostClassifier(algorithm='SAMME',
+                                    base_estimator=DecisionTreeClassifier(),
+                                    learning_rate=0.5, n_estimators=250,
+                                    random_state=0))])
+06/24/2022 08:23:47 PM: INFO: Adaboost_PCA_GeneticSearch Test Acc-: 0.9387116598692664
+06/24/2022 09:21:11 PM: INFO: Adaboost_PCA_RandomSearch Training Time (sec)-: 3442.8747429847717
+06/24/2022 09:21:11 PM: INFO: Adaboost_PCA_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction', PCA(n_components=0.99)),
+                ('clf',
+                 AdaBoostClassifier(algorithm='SAMME',
+                                    base_estimator=DecisionTreeClassifier(),
+                                    learning_rate=0.01, n_estimators=250,
+                                    random_state=0))])
+06/24/2022 09:21:11 PM: INFO: Adaboost_PCA_RandomSearch Test Acc-: 0.9387116598692664
+06/24/2022 10:25:11 PM: INFO: Adaboost_FeatureAgg_GeneticSearch Training Time (sec)-: 3839.561712026596
+06/24/2022 10:25:11 PM: INFO: Adaboost_FeatureAgg_GeneticSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction',
+                 FeatureAgglomeration(compute_distances=True, n_clusters=6)),
+                ('clf',
+                 AdaBoostClassifier(algorithm='SAMME',
+                                    base_estimator=DecisionTreeClassifier(),
+                                    learning_rate=0.1, n_estimators=100,
+                                    random_state=0))])
+06/24/2022 10:25:11 PM: INFO: Adaboost_FeatureAgg_GeneticSearch Test Acc-: 0.9010559249120063
+06/24/2022 10:41:29 PM: INFO: Adaboost_FeatureAgg_RandomSearch Training Time (sec)-: 977.6582024097443
+06/24/2022 10:41:29 PM: INFO: Adaboost_FeatureAgg_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction',
+                 FeatureAgglomeration(compute_distances=True, n_clusters=6)),
+                ('clf',
+                 AdaBoostClassifier(algorithm='SAMME',
+                                    base_estimator=DecisionTreeClassifier(),
+                                    learning_rate=1, n_estimators=100,
+                                    random_state=0))])
+06/24/2022 10:41:29 PM: INFO: Adaboost_FeatureAgg_RandomSearch Test Acc-: 0.9010559249120063
