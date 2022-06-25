@@ -2,9 +2,6 @@ from sklearn.model_selection import RandomizedSearchCV
 import sklearn
 from sklearn.metrics import accuracy_score
 from evolutionary_search import EvolutionaryAlgorithmSearchCV
-import warnings
-
-warnings.filterwarnings("ignore")
 
 def get_metaheuristic (method:str, estimator, pds, search_space_dict):
     if method == 'RandomSearch':
