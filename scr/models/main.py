@@ -37,7 +37,7 @@ if __name__ == '__main__':
     X_cv, y_cv, pds = split_data(X_train, X_val, y_train, y_val)
 
     for reduction_meth in ['PCA','FeatureAgg']:# 
-        for clf_meth in ['XGBoost', 'RandomForest', 'NeuralNetwork', 'LogisticRegression']:#, 
+        for clf_meth in ['XGBoost', 'RandomForest', 'NeuralNetwork', 'LogisticRegression', 'Adaboost']: 
             for metaheurisc_meth in ['GeneticSearch', 'RandomSearch']:
                 
                 str_inter_name = clf_meth+'_'+reduction_meth+'_'+metaheurisc_meth
