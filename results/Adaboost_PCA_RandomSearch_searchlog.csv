@@ -1,0 +1,6 @@
+,mean_fit_time,std_fit_time,mean_score_time,std_score_time,param_clf__n_estimators,param_clf__learning_rate,param_clf__base_estimator,params,split0_test_score,mean_test_score,std_test_score,rank_test_score
+6,22.16000008583069,0.0,0.11899971961975098,0.0,250,0.01,DecisionTreeClassifier(),"{'clf__n_estimators': 250, 'clf__learning_rate': 0.01, 'clf__base_estimator': DecisionTreeClassifier()}",0.9296030393608403,0.9296030393608403,0.0,1
+9,19.02031683921814,0.0,0.07599997520446777,0.0,150,0.1,DecisionTreeClassifier(),"{'clf__n_estimators': 150, 'clf__learning_rate': 0.1, 'clf__base_estimator': DecisionTreeClassifier()}",0.9296030393608403,0.9296030393608403,0.0,1
+8,126.85480570793152,0.0,0.7480003833770752,0.0,50,0.01,Perceptron(),"{'clf__n_estimators': 50, 'clf__learning_rate': 0.01, 'clf__base_estimator': Perceptron()}",0.851579741319105,0.851579741319105,0.0,3
+1,212.29332208633423,0.0,0.8739519119262695,0.0,150,0.1,Perceptron(),"{'clf__n_estimators': 150, 'clf__learning_rate': 0.1, 'clf__base_estimator': Perceptron()}",0.844512109953348,0.844512109953348,0.0,4
+5,52.31831955909729,0.0,0.25499916076660156,0.0,150,10,Perceptron(),"{'clf__n_estimators': 150, 'clf__learning_rate': 10, 'clf__base_estimator': Perceptron()}",0.7164008157108137,0.7164008157108137,0.0,5

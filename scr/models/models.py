@@ -1,9 +1,11 @@
 from xgboost import XGBClassifier
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.neural_network import MLPClassifier
 from sklearn.neighbors import KNeighborsClassifier
-
+from sklearn.linear_model import SGDClassifier, Perceptron
+from sklearn.naive_bayes import BernoulliNB
+from sklearn.tree import DecisionTreeClassifier
 
 import pickle
 
@@ -16,13 +18,13 @@ def get_clf(estimator):
         'clf__criterion': ['gini', 'entropy']
     }
 
-    """
+    
     ada_params = {
-        'clf__base_estimator': [BernoulliNB(),SGDClassifier(), DecisionTreeClassifier(), Perceptron()],
-        'clf__n_estimators': [10, 50, 100, 250, 500, 750, 1000],
-        'clf__learning_rate': [0.001, 0.01, 0.1, 0.5, 1, 10],
+        'clf__base_estimator': [BernoulliNB(), SGDClassifier(), DecisionTreeClassifier(), Perceptron()],
+        'clf__n_estimators': [10, 50, 100, 150, 250],
+        'clf__learning_rate': [0.001, 0.01, 0.1, 0.5, 1, 5, 10],
     }
-    """
+    
 
     xgb_params = {
         'clf__max_depth': [2, 3, 4, 5, 6, 10],
@@ -75,7 +77,8 @@ def get_clf(estimator):
         'LogisticRegression': [logreg_params, LogisticRegression(random_state=0, dual=False)],
 
         'KNN': [knn_params, KNeighborsClassifier()],
-        #'Adaboost': [ada_params, AdaBoostClassifier(random_state=0, algorithm='SAMME')],
+
+        'Adaboost': [ada_params, AdaBoostClassifier(random_state=0, algorithm='SAMME')],
     }
 
     search_space = param_dict[estimator][0]
