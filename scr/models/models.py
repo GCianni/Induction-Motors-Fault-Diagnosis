@@ -2,7 +2,6 @@ from xgboost import XGBClassifier
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.neural_network import MLPClassifier
-from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import SGDClassifier, Perceptron
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.tree import DecisionTreeClassifier
@@ -53,12 +52,6 @@ def get_clf(estimator):
         'clf__C':[0.01, 0.05, 0.1, 0.5, 1, 2]
     }
 
-    knn_params = {
-        'clf__n_neighbors':[5, 10, 15, 20, 25, 30, 35, 40, 50],
-        'clf__weights': ['uniform', 'distance'],
-        'clf__p':[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    }
-
 
     param_dict = {
         'RandomForest': [rf_params, RandomForestClassifier(random_state=0)],
@@ -75,8 +68,6 @@ def get_clf(estimator):
                                                      random_state=0)],
 
         'LogisticRegression': [logreg_params, LogisticRegression(random_state=0, dual=False)],
-
-        'KNN': [knn_params, KNeighborsClassifier()],
 
         'Adaboost': [ada_params, AdaBoostClassifier(random_state=0, algorithm='SAMME')],
     }
