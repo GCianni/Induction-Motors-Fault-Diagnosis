@@ -1,6 +1,6 @@
 ,param_index,index,params,mean_test_score,std_test_score,min_test_score,max_test_score,nan_test_score?
-55,0,92,"{'clf__base_estimator': DecisionTreeClassifier(), 'clf__n_estimators': 100, 'clf__learning_rate': 0.1}",0.9296030393608403,0.0,0.9296030393608403,0.9296030393608403,False
-70,0,109,"{'clf__base_estimator': DecisionTreeClassifier(), 'clf__n_estimators': 100, 'clf__learning_rate': 0.1}",0.9296030393608403,0.0,0.9296030393608403,0.9296030393608403,False
-81,0,120,"{'clf__base_estimator': DecisionTreeClassifier(), 'clf__n_estimators': 250, 'clf__learning_rate': 5}",0.9296030393608403,0.0,0.9296030393608403,0.9296030393608403,False
-80,0,119,"{'clf__base_estimator': DecisionTreeClassifier(), 'clf__n_estimators': 250, 'clf__learning_rate': 0.1}",0.9296030393608403,0.0,0.9296030393608403,0.9296030393608403,False
-79,0,118,"{'clf__base_estimator': DecisionTreeClassifier(), 'clf__n_estimators': 250, 'clf__learning_rate': 0.5}",0.9296030393608403,0.0,0.9296030393608403,0.9296030393608403,False
+54,0,82,"{'clf__base_estimator': DecisionTreeClassifier(), 'clf__n_estimators': 250, 'clf__learning_rate': 1}",0.9296030393608403,0.0,0.9296030393608403,0.9296030393608403,False
+81,0,114,"{'clf__base_estimator': DecisionTreeClassifier(), 'clf__n_estimators': 150, 'clf__learning_rate': 1}",0.9296030393608403,0.0,0.9296030393608403,0.9296030393608403,False
+79,0,112,"{'clf__base_estimator': DecisionTreeClassifier(), 'clf__n_estimators': 150, 'clf__learning_rate': 1}",0.9296030393608403,0.0,0.9296030393608403,0.9296030393608403,False
+78,0,111,"{'clf__base_estimator': DecisionTreeClassifier(), 'clf__n_estimators': 150, 'clf__learning_rate': 0.5}",0.9296030393608403,0.0,0.9296030393608403,0.9296030393608403,False
+77,0,110,"{'clf__base_estimator': DecisionTreeClassifier(), 'clf__n_estimators': 10, 'clf__learning_rate': 0.5}",0.9296030393608403,0.0,0.9296030393608403,0.9296030393608403,False

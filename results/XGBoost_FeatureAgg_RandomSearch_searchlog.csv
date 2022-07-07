@@ -1,6 +1,6 @@
 ,mean_fit_time,std_fit_time,mean_score_time,std_score_time,param_clf__n_estimators,param_clf__max_depth,param_clf__learning_rate,param_clf__colsample_bytree,params,split0_test_score,mean_test_score,std_test_score,rank_test_score
-8,360.68203926086426,0.0,3.497997999191284,0.0,256,5,1,0.3,"{'clf__n_estimators': 256, 'clf__max_depth': 5, 'clf__learning_rate': 1, 'clf__colsample_bytree': 0.3}",0.7951224962985725,0.7951224962985725,0.0,1
-7,592.3053827285767,0.0,1.68399977684021,0.0,256,3,0.5,1,"{'clf__n_estimators': 256, 'clf__max_depth': 3, 'clf__learning_rate': 0.5, 'clf__colsample_bytree': 1}",0.7857921054836997,0.7857921054836997,0.0,2
-1,2110.9089527130127,0.0,5.666033983230591,0.0,1024,5,0.01,1,"{'clf__n_estimators': 1024, 'clf__max_depth': 5, 'clf__learning_rate': 0.01, 'clf__colsample_bytree': 1}",0.7555102382881247,0.7555102382881247,0.0,3
-2,346.1687912940979,0.0,1.34200119972229,0.0,128,3,0.2,0.9,"{'clf__n_estimators': 128, 'clf__max_depth': 3, 'clf__learning_rate': 0.2, 'clf__colsample_bytree': 0.9}",0.7514875548230299,0.7514875548230299,0.0,4
-3,384.76779103279114,0.0,2.9089996814727783,0.0,512,2,0.05,0.1,"{'clf__n_estimators': 512, 'clf__max_depth': 2, 'clf__learning_rate': 0.05, 'clf__colsample_bytree': 0.1}",0.6848897952342375,0.6848897952342375,0.0,5
+4,186.66292119026184,0.0,0.7239956855773926,0.0,64,5,1,0.9,"{'clf__n_estimators': 64, 'clf__max_depth': 5, 'clf__learning_rate': 1, 'clf__colsample_bytree': 0.9}",0.8008212978741235,0.8008212978741235,0.0,1
+8,68.31228184700012,0.0,0.5009975433349609,0.0,8,10,0.1,1,"{'clf__n_estimators': 8, 'clf__max_depth': 10, 'clf__learning_rate': 0.1, 'clf__colsample_bytree': 1}",0.7731374137497555,0.7731374137497555,0.0,2
+6,391.3118896484375,0.0,2.0649964809417725,0.0,128,6,0.05,0.9,"{'clf__n_estimators': 128, 'clf__max_depth': 6, 'clf__learning_rate': 0.05, 'clf__colsample_bytree': 0.9}",0.7546163086292147,0.7546163086292147,0.0,3
+2,877.6130087375641,0.0,1.85105299949646,0.0,512,4,0.001,1,"{'clf__n_estimators': 512, 'clf__max_depth': 4, 'clf__learning_rate': 0.001, 'clf__colsample_bytree': 1}",0.6686314495628125,0.6686314495628125,0.0,4
+5,36.221118450164795,0.0,0.629000186920166,0.0,32,3,0.2,0.1,"{'clf__n_estimators': 32, 'clf__max_depth': 3, 'clf__learning_rate': 0.2, 'clf__colsample_bytree': 0.1}",0.6446629605832891,0.6446629605832891,0.0,5

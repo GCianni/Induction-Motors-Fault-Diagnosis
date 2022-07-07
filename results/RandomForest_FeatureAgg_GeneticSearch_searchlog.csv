@@ -1,6 +1,6 @@
 ,param_index,index,params,mean_test_score,std_test_score,min_test_score,max_test_score,nan_test_score?
-118,0,153,"{'clf__n_estimators': 30, 'clf__max_depth': 50, 'clf__min_samples_leaf': 2, 'clf__bootstrap': False, 'clf__criterion': 'entropy'}",0.9095175573372071,0.0,0.9095175573372071,0.9095175573372071,False
-91,0,120,"{'clf__n_estimators': 30, 'clf__max_depth': 50, 'clf__min_samples_leaf': 2, 'clf__bootstrap': False, 'clf__criterion': 'entropy'}",0.9095175573372071,0.0,0.9095175573372071,0.9095175573372071,False
-88,0,117,"{'clf__n_estimators': 30, 'clf__max_depth': 50, 'clf__min_samples_leaf': 2, 'clf__bootstrap': False, 'clf__criterion': 'entropy'}",0.9095175573372071,0.0,0.9095175573372071,0.9095175573372071,False
-87,0,116,"{'clf__n_estimators': 30, 'clf__max_depth': 50, 'clf__min_samples_leaf': 2, 'clf__bootstrap': False, 'clf__criterion': 'entropy'}",0.9095175573372071,0.0,0.9095175573372071,0.9095175573372071,False
-86,0,115,"{'clf__n_estimators': 30, 'clf__max_depth': 50, 'clf__min_samples_leaf': 2, 'clf__bootstrap': False, 'clf__criterion': 'entropy'}",0.9095175573372071,0.0,0.9095175573372071,0.9095175573372071,False
+64,0,96,"{'clf__n_estimators': 30, 'clf__max_depth': 50, 'clf__min_samples_leaf': 2, 'clf__bootstrap': False, 'clf__criterion': 'entropy'}",0.9095175573372071,0.0,0.9095175573372071,0.9095175573372071,False
+82,0,118,"{'clf__n_estimators': 30, 'clf__max_depth': 50, 'clf__min_samples_leaf': 2, 'clf__bootstrap': False, 'clf__criterion': 'entropy'}",0.9095175573372071,0.0,0.9095175573372071,0.9095175573372071,False
+95,0,131,"{'clf__n_estimators': 30, 'clf__max_depth': 50, 'clf__min_samples_leaf': 2, 'clf__bootstrap': False, 'clf__criterion': 'entropy'}",0.9095175573372071,0.0,0.9095175573372071,0.9095175573372071,False
+94,0,130,"{'clf__n_estimators': 30, 'clf__max_depth': 50, 'clf__min_samples_leaf': 32, 'clf__bootstrap': False, 'clf__criterion': 'entropy'}",0.9095175573372071,0.0,0.9095175573372071,0.9095175573372071,False
+93,0,129,"{'clf__n_estimators': 30, 'clf__max_depth': 50, 'clf__min_samples_leaf': 2, 'clf__bootstrap': False, 'clf__criterion': 'entropy'}",0.9095175573372071,0.0,0.9095175573372071,0.9095175573372071,False

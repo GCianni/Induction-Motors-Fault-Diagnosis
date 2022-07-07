@@ -1,38 +1,216 @@
-06/24/2022 08:23:47 PM: INFO: Adaboost_PCA_GeneticSearch Training Time (sec)-: 15267.870790958405
-06/24/2022 08:23:47 PM: INFO: Adaboost_PCA_GeneticSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+07/06/2022 07:53:05 AM: INFO: XGBoost_PCA_GeneticSearch Training Time (sec)-: 27129.79567170143
+07/06/2022 07:53:05 AM: INFO: XGBoost_PCA_GeneticSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction', PCA(n_components=0.99)),
+                ('clf',
+                 XGBClassifier(base_score=0.5, booster='gbtree', callbacks=None,
+                               colsample_bylevel=1, colsample_bynode=1,
+                               colsample_bytree=0.7, early_stopping_rounds=None,
+                               enable_categorical=False, eval_metric=None,
+                               gamma=0, gpu_id=-1, grow_policy='depthwise',
+                               importance_type=None, interaction_constraints='',
+                               learning_rate=0.5, max_bin=256,
+                               max_cat_to_onehot=4, max_delta_step=0,
+                               max_depth=6, max_leaves=0, min_child_weight=1,
+                               missing=nan, monotone_constraints='()',
+                               n_estimators=1024, n_jobs=0, num_class=10,
+                               num_parallel_tree=1, objective='multi:softmax',
+                               predictor='auto', random_state=0, ...))])
+07/06/2022 07:53:08 AM: INFO: XGBoost_PCA_GeneticSearch Test Acc-: 0.9831834180680485
+07/06/2022 10:54:55 AM: INFO: XGBoost_PCA_RandomSearch Training Time (sec)-: 10907.182464122772
+07/06/2022 10:54:55 AM: INFO: XGBoost_PCA_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction', PCA(n_components=0.99)),
+                ('clf',
+                 XGBClassifier(base_score=0.5, booster='gbtree', callbacks=None,
+                               colsample_bylevel=1, colsample_bynode=1,
+                               colsample_bytree=0.9, early_stopping_rounds=None,
+                               enable_categorical=False, eval_metric=None,
+                               gamma=0, gpu_id=-1, grow_policy='depthwise',
+                               importance_type=None, interaction_constraints='',
+                               learning_rate=0.5, max_bin=256,
+                               max_cat_to_onehot=4, max_delta_step=0,
+                               max_depth=6, max_leaves=0, min_child_weight=1,
+                               missing=nan, monotone_constraints='()',
+                               n_estimators=512, n_jobs=0, num_class=10,
+                               num_parallel_tree=1, objective='multi:softmax',
+                               predictor='auto', random_state=0, ...))])
+07/06/2022 10:54:57 AM: INFO: XGBoost_PCA_RandomSearch Test Acc-: 0.9817587574724845
+07/06/2022 11:13:39 AM: INFO: RandomForest_PCA_GeneticSearch Training Time (sec)-: 1121.5030493736267
+07/06/2022 11:13:39 AM: INFO: RandomForest_PCA_GeneticSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction', PCA(n_components=0.99)),
+                ('clf',
+                 RandomForestClassifier(bootstrap=False, criterion='entropy',
+                                        max_depth=50, min_samples_leaf=2,
+                                        n_estimators=30, random_state=0))])
+07/06/2022 11:13:39 AM: INFO: RandomForest_PCA_GeneticSearch Test Acc-: 0.9715347226102017
+07/06/2022 11:15:54 AM: INFO: RandomForest_PCA_RandomSearch Training Time (sec)-: 134.65088319778442
+07/06/2022 11:15:54 AM: INFO: RandomForest_PCA_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction', PCA(n_components=0.99)),
+                ('clf',
+                 RandomForestClassifier(bootstrap=False, max_depth=30,
+                                        n_estimators=20, random_state=0))])
+07/06/2022 11:15:54 AM: INFO: RandomForest_PCA_RandomSearch Test Acc-: 0.9689088775909269
+07/06/2022 01:05:58 PM: INFO: NeuralNetwork_PCA_GeneticSearch Training Time (sec)-: 6603.958686828613
+07/06/2022 01:05:58 PM: INFO: NeuralNetwork_PCA_GeneticSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction', PCA(n_components=0.99)),
+                ('clf',
+                 MLPClassifier(alpha=0.001, early_stopping=True,
+                               hidden_layer_sizes=(256, 256, 256, 256),
+                               learning_rate='adaptive', max_iter=100,
+                               n_iter_no_change=4, random_state=0,
+                               tol=0.001))])
+07/06/2022 01:06:01 PM: INFO: NeuralNetwork_PCA_GeneticSearch Test Acc-: 0.9822895133806357
+07/06/2022 01:23:56 PM: INFO: NeuralNetwork_PCA_RandomSearch Training Time (sec)-: 1074.3768599033356
+07/06/2022 01:23:56 PM: INFO: NeuralNetwork_PCA_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction', PCA(n_components=0.99)),
+                ('clf',
+                 MLPClassifier(activation='tanh', alpha=0.01,
+                               early_stopping=True,
+                               hidden_layer_sizes=(256, 256, 256),
+                               learning_rate='adaptive', max_iter=100,
+                               n_iter_no_change=4, random_state=0,
+                               tol=0.001))])
+07/06/2022 01:23:57 PM: INFO: NeuralNetwork_PCA_RandomSearch Test Acc-: 0.9738253533716967
+07/06/2022 02:14:18 PM: INFO: LogisticRegression_PCA_GeneticSearch Training Time (sec)-: 3021.5030131340027
+07/06/2022 02:14:18 PM: INFO: LogisticRegression_PCA_GeneticSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction', PCA(n_components=0.99)),
+                ('clf',
+                 LogisticRegression(C=0.01, penalty='none', random_state=0,
+                                    solver='sag'))])
+07/06/2022 02:14:18 PM: INFO: LogisticRegression_PCA_GeneticSearch Test Acc-: 0.8930945862897368
+07/06/2022 02:26:17 PM: INFO: LogisticRegression_PCA_RandomSearch Training Time (sec)-: 718.6095449924469
+07/06/2022 02:26:17 PM: INFO: LogisticRegression_PCA_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction', PCA(n_components=0.99)),
+                ('clf',
+                 LogisticRegression(C=0.1, penalty='none', random_state=0,
+                                    solver='sag'))])
+07/06/2022 02:26:17 PM: INFO: LogisticRegression_PCA_RandomSearch Test Acc-: 0.8930945862897368
+07/06/2022 04:49:09 PM: INFO: Adaboost_PCA_GeneticSearch Training Time (sec)-: 8572.113549470901
+07/06/2022 04:49:09 PM: INFO: Adaboost_PCA_GeneticSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
                 ('Dim Reduction', PCA(n_components=0.99)),
                 ('clf',
                  AdaBoostClassifier(algorithm='SAMME',
                                     base_estimator=DecisionTreeClassifier(),
-                                    learning_rate=0.5, n_estimators=250,
+                                    learning_rate=1, n_estimators=150,
                                     random_state=0))])
-06/24/2022 08:23:47 PM: INFO: Adaboost_PCA_GeneticSearch Test Acc-: 0.9387116598692664
-06/24/2022 09:21:11 PM: INFO: Adaboost_PCA_RandomSearch Training Time (sec)-: 3442.8747429847717
-06/24/2022 09:21:11 PM: INFO: Adaboost_PCA_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+07/06/2022 04:49:09 PM: INFO: Adaboost_PCA_GeneticSearch Test Acc-: 0.9387116598692664
+07/06/2022 05:44:45 PM: INFO: Adaboost_PCA_RandomSearch Training Time (sec)-: 3335.6730365753174
+07/06/2022 05:44:45 PM: INFO: Adaboost_PCA_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
                 ('Dim Reduction', PCA(n_components=0.99)),
                 ('clf',
                  AdaBoostClassifier(algorithm='SAMME',
                                     base_estimator=DecisionTreeClassifier(),
-                                    learning_rate=0.01, n_estimators=250,
+                                    learning_rate=0.5, n_estimators=10,
                                     random_state=0))])
-06/24/2022 09:21:11 PM: INFO: Adaboost_PCA_RandomSearch Test Acc-: 0.9387116598692664
-06/24/2022 10:25:11 PM: INFO: Adaboost_FeatureAgg_GeneticSearch Training Time (sec)-: 3839.561712026596
-06/24/2022 10:25:11 PM: INFO: Adaboost_FeatureAgg_GeneticSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+07/06/2022 05:44:45 PM: INFO: Adaboost_PCA_RandomSearch Test Acc-: 0.9387116598692664
+07/07/2022 12:24:54 AM: INFO: XGBoost_FeatureAgg_GeneticSearch Training Time (sec)-: 24008.056729078293
+07/07/2022 12:24:54 AM: INFO: XGBoost_FeatureAgg_GeneticSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction',
+                 FeatureAgglomeration(compute_distances=True, n_clusters=6)),
+                ('clf',
+                 XGBClassifier(base_score=0.5, booster='gbtree', callbacks=None,
+                               colsample_bylevel=1, colsample_bynode=1,
+                               colsample_bytree=0.9, early_stopping_rounds=None,
+                               enable_categorical=False, eval_metric=None,
+                               gamma=0, gpu_id=-1, grow_policy='depthwise',
+                               importance_type=None, interaction_constraints='',
+                               learning_rate=0.2, max_bin=256,
+                               max_cat_to_onehot=4, max_delta_step=0,
+                               max_depth=10, max_leaves=0, min_child_weight=1,
+                               missing=nan, monotone_constraints='()',
+                               n_estimators=1024, n_jobs=0, num_class=10,
+                               num_parallel_tree=1, objective='multi:softmax',
+                               predictor='auto', random_state=0, ...))])
+07/07/2022 12:25:00 AM: INFO: XGBoost_FeatureAgg_GeneticSearch Test Acc-: 0.9229007207106542
+07/07/2022 12:41:32 AM: INFO: XGBoost_FeatureAgg_RandomSearch Training Time (sec)-: 989.1406047344208
+07/07/2022 12:41:32 AM: INFO: XGBoost_FeatureAgg_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction',
+                 FeatureAgglomeration(compute_distances=True, n_clusters=6)),
+                ('clf',
+                 XGBClassifier(base_score=0.5, booster='gbtree', callbacks=None,
+                               colsample_bylevel=1, colsample_bynode=1,
+                               colsample_bytree=0.9, early_stopping_rounds=None,
+                               enable_categorical=False, eval_metric=None,
+                               gamma=0, gpu_id=-1, grow_policy='depthwise',
+                               importance_type=None, interaction_constraints='',
+                               learning_rate=1, max_bin=256,
+                               max_cat_to_onehot=4, max_delta_step=0,
+                               max_depth=5, max_leaves=0, min_child_weight=1,
+                               missing=nan, monotone_constraints='()',
+                               n_estimators=64, n_jobs=0, num_class=10,
+                               num_parallel_tree=1, objective='multi:softmax',
+                               predictor='auto', random_state=0, ...))])
+07/07/2022 12:41:33 AM: INFO: XGBoost_FeatureAgg_RandomSearch Test Acc-: 0.8145147773618638
+07/07/2022 12:54:36 AM: INFO: RandomForest_FeatureAgg_GeneticSearch Training Time (sec)-: 782.7054462432861
+07/07/2022 12:54:36 AM: INFO: RandomForest_FeatureAgg_GeneticSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction',
+                 FeatureAgglomeration(compute_distances=True, n_clusters=6)),
+                ('clf',
+                 RandomForestClassifier(bootstrap=False, criterion='entropy',
+                                        max_depth=50, min_samples_leaf=2,
+                                        n_estimators=30, random_state=0))])
+07/07/2022 12:54:36 AM: INFO: RandomForest_FeatureAgg_GeneticSearch Test Acc-: 0.9254986312084474
+07/07/2022 12:55:50 AM: INFO: RandomForest_FeatureAgg_RandomSearch Training Time (sec)-: 72.87137413024902
+07/07/2022 12:55:50 AM: INFO: RandomForest_FeatureAgg_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction',
+                 FeatureAgglomeration(compute_distances=True, n_clusters=6)),
+                ('clf',
+                 RandomForestClassifier(bootstrap=False, max_depth=50,
+                                        min_samples_leaf=4, n_estimators=20,
+                                        random_state=0))])
+07/07/2022 12:55:51 AM: INFO: RandomForest_FeatureAgg_RandomSearch Test Acc-: 0.9090451980557573
+07/07/2022 04:08:43 AM: INFO: NeuralNetwork_FeatureAgg_GeneticSearch Training Time (sec)-: 11571.894695281982
+07/07/2022 04:08:43 AM: INFO: NeuralNetwork_FeatureAgg_GeneticSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction',
+                 FeatureAgglomeration(compute_distances=True, n_clusters=6)),
+                ('clf',
+                 MLPClassifier(activation='tanh', early_stopping=True,
+                               hidden_layer_sizes=(256, 256, 256, 256),
+                               learning_rate='adaptive', max_iter=100,
+                               n_iter_no_change=4, random_state=0,
+                               tol=0.001))])
+07/07/2022 04:08:44 AM: INFO: NeuralNetwork_FeatureAgg_GeneticSearch Test Acc-: 0.7796245600312867
+07/07/2022 04:22:45 AM: INFO: NeuralNetwork_FeatureAgg_RandomSearch Training Time (sec)-: 840.7946412563324
+07/07/2022 04:22:45 AM: INFO: NeuralNetwork_FeatureAgg_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction',
+                 FeatureAgglomeration(compute_distances=True, n_clusters=6)),
+                ('clf',
+                 MLPClassifier(early_stopping=True,
+                               hidden_layer_sizes=(256, 256), max_iter=100,
+                               n_iter_no_change=4, random_state=0,
+                               tol=0.001))])
+07/07/2022 04:22:47 AM: INFO: NeuralNetwork_FeatureAgg_RandomSearch Test Acc-: 0.7618302698474775
+07/07/2022 05:09:06 AM: INFO: LogisticRegression_FeatureAgg_GeneticSearch Training Time (sec)-: 2779.6507959365845
+07/07/2022 05:09:06 AM: INFO: LogisticRegression_FeatureAgg_GeneticSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction',
+                 FeatureAgglomeration(compute_distances=True, n_clusters=6)),
+                ('clf',
+                 LogisticRegression(C=1, penalty='none', random_state=0,
+                                    solver='saga'))])
+07/07/2022 05:09:07 AM: INFO: LogisticRegression_FeatureAgg_GeneticSearch Test Acc-: 0.6098385384658361
+07/07/2022 05:15:45 AM: INFO: LogisticRegression_FeatureAgg_RandomSearch Training Time (sec)-: 398.68158888816833
+07/07/2022 05:15:45 AM: INFO: LogisticRegression_FeatureAgg_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+                ('Dim Reduction',
+                 FeatureAgglomeration(compute_distances=True, n_clusters=6)),
+                ('clf',
+                 LogisticRegression(C=1, penalty='none', random_state=0,
+                                    solver='saga'))])
+07/07/2022 05:15:45 AM: INFO: LogisticRegression_FeatureAgg_RandomSearch Test Acc-: 0.6098385384658361
+07/07/2022 06:35:57 AM: INFO: Adaboost_FeatureAgg_GeneticSearch Training Time (sec)-: 4811.901636600494
+07/07/2022 06:35:57 AM: INFO: Adaboost_FeatureAgg_GeneticSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
                 ('Dim Reduction',
                  FeatureAgglomeration(compute_distances=True, n_clusters=6)),
                 ('clf',
                  AdaBoostClassifier(algorithm='SAMME',
                                     base_estimator=DecisionTreeClassifier(),
-                                    learning_rate=0.1, n_estimators=100,
+                                    learning_rate=0.01, n_estimators=100,
                                     random_state=0))])
-06/24/2022 10:25:11 PM: INFO: Adaboost_FeatureAgg_GeneticSearch Test Acc-: 0.9010559249120063
-06/24/2022 10:41:29 PM: INFO: Adaboost_FeatureAgg_RandomSearch Training Time (sec)-: 977.6582024097443
-06/24/2022 10:41:29 PM: INFO: Adaboost_FeatureAgg_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
+07/07/2022 06:35:58 AM: INFO: Adaboost_FeatureAgg_GeneticSearch Test Acc-: 0.9010559249120063
+07/07/2022 06:45:53 AM: INFO: Adaboost_FeatureAgg_RandomSearch Training Time (sec)-: 595.3859162330627
+07/07/2022 06:45:53 AM: INFO: Adaboost_FeatureAgg_RandomSearch Best Model-: Pipeline(steps=[('Scaler', MinMaxScaler()),
                 ('Dim Reduction',
                  FeatureAgglomeration(compute_distances=True, n_clusters=6)),
                 ('clf',
                  AdaBoostClassifier(algorithm='SAMME',
                                     base_estimator=DecisionTreeClassifier(),
-                                    learning_rate=1, n_estimators=100,
-                                    random_state=0))])
-06/24/2022 10:41:29 PM: INFO: Adaboost_FeatureAgg_RandomSearch Test Acc-: 0.9010559249120063
+                                    learning_rate=5, random_state=0))])
+07/07/2022 06:45:53 AM: INFO: Adaboost_FeatureAgg_RandomSearch Test Acc-: 0.9010559249120063
