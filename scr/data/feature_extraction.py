@@ -38,14 +38,15 @@ def feature_dataset(dataframe, fs, window_size, window_step,):
     last_index = len(dataframe) - 1
     df_appender = []
     for channel in (dataframe.columns.values.tolist()):
-        windowed_data = extract_windows_vectorized(dataframe[channel].to_numpy(), 0,
-                                                   last_index - window_step, window_size, window_step)
+        #windowed_data = extract_windows_vectorized(dataframe[channel].to_numpy(), 0, last_index - window_step, window_size, window_step)
+        windowed_data = rolling_window(dataframe[channel].to_numpy(), window_size, window_step)
         feature_df = feature_extraction(windowed_data, fs)
         feature_df.rename({0: 'RMS ' + channel, 1: 'Kurtosis ' + channel, 2: 'Entropy ' + channel,
                            3: 'Spectral Mean ' + channel, 4: 'Spectral Centroid ' + channel,
                            5: 'Spectral Maximum ' + channel, 6: 'Spectral Kurtosis ' + channel},
                           axis=1, inplace=True)
         df_appender.append(feature_df)
+        print('finish feature extraction')
     #print(df_appender)
     return pd.concat(df_appender, axis=1)
 
@@ -61,4 +62,8 @@ def extract_windows_vectorized(array, clearing_time_index, max_time, sub_window_
                     )
     return array[sub_windows]
 
-
+def rolling_window(array, window_size,window_step):
+    shape = (array.shape[0] - window_size + 1, window_size)
+    strides = (array.strides[0],) + array.strides
+    rolled = np.lib.stride_tricks.as_strided(array, shape=shape, strides=strides)
+    return rolled[np.arange(0,shape[0],window_step)]
