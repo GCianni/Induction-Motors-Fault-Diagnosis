@@ -169,3 +169,7 @@ cython_debug/
 docs/latex/
 datasets/
 generated_models/
+results/metrics/
+
+#temp files
+temp/
