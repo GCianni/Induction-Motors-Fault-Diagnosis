@@ -21,6 +21,7 @@ def split_data(X_train, X_val, y_train, y_val):
     return X, y, pds
 
 FILE_READ_PATH = r'C:\\Induction Motor Fault Diagnosis\\datasets\\extracted_features_datasets\\Balanced_Features_Data.csv'
+SETS_PATH = r'C:\\Induction Motor Fault Diagnosis\\datasets\\sets\\'
 RESULT_PATH =  r'C:\\Induction Motor Fault Diagnosis\\results\\'
 if __name__ == '__main__':
     
@@ -31,11 +32,17 @@ if __name__ == '__main__':
     X = df.iloc[: , :-1]
     y = df.iloc[: , -1]
     
-
+    #Split Data
     X_train, X_aux, y_train, y_aux = train_test_split(X, y, test_size=0.3, random_state=42, shuffle=True)
     X_val, X_test, y_val, y_test = train_test_split(X_aux, y_aux, test_size=0.5, random_state=42, shuffle=True)
     X_cv, y_cv, pds = split_data(X_train, X_val, y_train, y_val)
 
+    #Save Splited data
+    sets = [X_train, y_train, X_val, y_val, X_test, y_test]
+    sets_name = ['X_train.csv', 'y_train.csv', 'X_val.csv', 'y_val.csv', 'X_test.csv', 'y_test.csv']
+    for i, set in enumerate(sets):
+        set.to_csv(SETS_PATH+sets_name[i])
+    
     for reduction_meth in ['PCA','FeatureAgg']:# 
         for clf_meth in ['XGBoost', 'RandomForest', 'NeuralNetwork', 'LogisticRegression', 'Adaboost']: 
             for metaheurisc_meth in ['GeneticSearch', 'RandomSearch']:
@@ -68,7 +75,8 @@ if __name__ == '__main__':
 
                 save_clf(best_model, str_inter_name)
 
-                history = pd.DataFrame(search_method.cv_results_).sort_values("mean_test_score", ascending=False).head()
+                # history = pd.DataFrame(search_method.cv_results_).sort_values("mean_test_score", ascending=False).head()
+                history = pd.DataFrame(search_method.cv_results_)
                 history.to_csv(RESULT_PATH+str_inter_name+'_searchlog.csv')
     
 
