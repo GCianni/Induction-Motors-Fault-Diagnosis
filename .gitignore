@@ -173,3 +173,6 @@ results/metrics/
 
 #temp files
 temp/
+
+#models files
+*.pkl
